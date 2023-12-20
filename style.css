@@ -1,0 +1,350 @@
+:root {
+  --purple-color: #c160ff;
+  --cream-color: #fffdd0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: Public Sans, sans-serif;
+  scrollbar-width: none;
+  color: aliceblue;
+}
+
+/*navbar*/
+nav {
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: #1e1e1e;
+  position: fixed;
+  height: 5rem;
+}
+
+.navbar {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #1e1e1e;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.logo a img {
+  height: 40px;
+}
+
+.togglebutton {
+  background-color: #c160ff;
+  color: black;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
+.togglebutton:hover {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  display: inline;
+  letter-spacing: 1px;
+}
+
+li a {
+  padding: 1rem 1rem;
+  display: block;
+  color: aliceblue;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: color;
+}
+
+li a:hover {
+  color: var(--purple-color);
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*hero*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  padding-top: 10rem;
+  height: 70vh;
+}
+
+.lefthero {
+  flex-basis: 35%;
+}
+
+.selfpic {
+  border-radius: 50%;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 2rem;
+}
+
+.righthero {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 65%;
+}
+
+.aboutme {
+  padding: 1rem;
+}
+
+.socials {
+  text-align: center;
+  padding: 1rem;
+}
+
+.socials a {
+  border-radius: 50%;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+/*work*/
+
+.workcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding-top: 8rem;
+}
+
+.workcards {
+  height: 500px;
+  width: 400px;
+  border: solid 3px var(--purple-color);
+}
+
+.worktitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  padding: 2rem 2rem;
+}
+
+.workimagecontainer {
+  padding: 0 2rem;
+  width: 80%;
+}
+
+.workimage {
+  width: 100%;
+  height: 150px;
+}
+
+.workdesc {
+  padding: 2rem 2rem;
+}
+
+.workbuttonscontainer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 4rem;
+}
+
+.workbutton {
+  width: 100px;
+  height: 50px;
+  background-color: #c160ff;
+  cursor: pointer;
+}
+
+/*qualifications*/
+.qual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4rem;
+}
+
+.leftqual {
+  flex-basis: 50%;
+}
+
+.resume {
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightqual {
+  flex-basis: 50%;
+  padding-left: 2rem;
+}
+
+.rightqualinner {
+  display: grid;
+  gap: 4rem;
+}
+
+.qskills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.qinterests {
+  text-align: center;
+}
+
+.skill-img {
+  padding: 0 1rem 0 1rem;
+  width: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+}
+
+.skill-img img {
+  padding-bottom: 10px;
+  animation: float 6s ease-out infinite;
+}
+
+.skills-imgs span {
+  color: var(--purple-color);
+  font-size: 20px;
+  text-align: center;
+}
+
+#asm-logo {
+  filter: brightness(1.1);
+}
+
+/*Service*/
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90dvh;
+  padding-top: 4rem;
+}
+
+.servicecard {
+  max-width: 64rem;
+  display: flex;
+  padding: 1rem 0;
+  height: 8rem;
+  flex-basis: 25%;
+}
+
+.servicecard2 {
+  flex-direction: row-reverse;
+}
+
+.servicedesc {
+  flex-basis: 80%;
+  display: flex;
+  align-items: center;
+}
+
+.servicepic {
+  flex-basis: 20%;
+  text-align: center;
+}
+
+.servicepic img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.servicelinks {
+  text-decoration: underline;
+}
+
+.servicelinks:hover {
+  color: #c160ff;
+}
+/*Everything under here is the AI page*/
+.header {
+  margin-top: 8rem;
+  background-color: #4f2683;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Apply styles to headings */
+.heading-1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.heading-2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #4f2683;
+}
+
+/* Apply styles to content section */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  line-height: 1.6;
+}
+
+/* Apply styles to the footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4f2683;
+  color: #fff;
+}

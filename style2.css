@@ -1,0 +1,361 @@
+:root {
+  --purple-color: #c160ff;
+  --cream-color: #fffdd0;
+  --brown-color: #654321;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scrollbar-width: none;
+  font-size: 17px;
+  color: black;
+}
+
+/*navbar*/
+nav {
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--cream-color);
+  position: fixed;
+  width: 8rem;
+  border-right: 2px solid black;
+}
+
+.navbar {
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-color: var(--cream-color);
+}
+
+.logo {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo a img {
+  height: 40px;
+  filter: hue-rotate(180deg);
+}
+
+.togglebutton {
+  background-color: var(--brown-color);
+  color: black;
+  padding: 0.5rem;
+  border-radius: 20%;
+}
+
+.togglebutton:hover {
+  cursor: pointer;
+}
+
+.topmenu {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+li a {
+  padding: 1rem 1rem;
+  display: block;
+  color: black;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  transition-property: color;
+}
+
+li a:hover {
+  color: var(--brown-color);
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*hero*/
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 48rem;
+  height: 100vh;
+}
+
+.lefthero {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 4rem;
+}
+
+.selfpic {
+  border-radius: 20% 0 20% 0;
+}
+
+.name {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 1rem;
+}
+
+.righthero {
+  display: flex;
+  flex-direction: row;
+}
+
+.aboutme {
+  padding: 1rem;
+}
+
+.socials {
+  text-align: center;
+  padding: 1rem;
+}
+
+.socials img {
+  filter: hue-rotate(90deg);
+}
+
+.socials a {
+  border-radius: 50%;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+/*work*/
+
+.workcontainer {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.workcards {
+  display: grid;
+  grid-template-columns: 150px 400px auto 100px;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+}
+
+.worktitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.workimage {
+  width: 100%;
+  height: 100%;
+  max-height: 250px;
+}
+
+.workbuttonscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.workbuttonscontainer a {
+  width: 100px;
+  height: 50px;
+}
+
+.workbutton {
+  width: 100px;
+  height: 50px;
+  background-color: var(--brown-color);
+  cursor: pointer;
+}
+
+.workbutton:hover {
+  background-color: white;
+}
+
+/*qualifications*/
+.qual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 54rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+}
+
+.resume {
+  height: 650px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rightqual {
+  padding-bottom: 2rem;
+}
+
+.qskills {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+.qinterests {
+  text-align: center;
+}
+
+.skill-img {
+  padding: 0 1rem 0 1rem;
+  width: fit-content;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  filter: hue-rotate(90deg);
+}
+
+.skill-img img {
+  padding-bottom: 10px;
+  width: 60px;
+}
+
+.skills-imgs span {
+  color: var(--purple-color);
+  font-size: 20px;
+  text-align: center;
+}
+
+#asm-logo {
+  filter: brightness(1.1);
+}
+
+/*Service*/
+.service {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100vh;
+  grid-template-columns: auto auto;
+  gap: 4rem;
+  padding-bottom: 2rem;
+}
+
+.servicecard {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicedesc {
+  display: flex;
+  align-items: center;
+}
+
+.servicepic {
+  text-align: center;
+  height: 150px;
+}
+
+.servicepic img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.servicelinks {
+  text-decoration: underline;
+}
+
+.servicelinks:hover {
+  color: var(--brown-color);
+}
+
+/*Everything under here is the AI page*/
+.header {
+  background-color: #4f2683;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Apply styles to headings */
+.heading-1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.heading-2 {
+  font-size: 24px;
+  margin-top: 20px;
+  color: #4f2683;
+}
+
+/* Apply styles to content section */
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.paragraph {
+  line-height: 1.6;
+}
+
+/* Apply styles to the footer */
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #4f2683;
+  color: #fff;
+}
